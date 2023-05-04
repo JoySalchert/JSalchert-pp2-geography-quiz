@@ -1,4 +1,21 @@
 div {
     color: hwb(0 100% 0%);
     background-color: rgb(13, 127, 76);
+    text-align: center;
+}
+
+#header {
+    height: 100px;
+    padding-top: 20px;
+}
+
+#questions_area {
+    height: 300px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#buttons {
+    height: 40px;
+    padding-top: 20px;
 }
