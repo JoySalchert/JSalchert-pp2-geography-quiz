@@ -1,7 +1,11 @@
+//I took the artikle "Quiz App Using HTML, CSS And JavaScript (Source Code) – Coding Torque
+//"Written by: Piyush Patil (Code Credits: @virtualwiz) as a guide! I'm embarased that i could not finish on time!
+
 let quizArea = document.getElementById("questions_area");
 let startQuizButton = document.getElementById("button_start_quiz");
 let restartButton = document.getElementById("button_restart");
 let nextButton = document.getElementById("button_next");
+let questionCount;
 
 // Questions
 const questionsArray = [
@@ -72,3 +76,49 @@ const questionsArray = [
       correct: "8 Billion",
   },
 ]
+
+// Quiz Start (User clicks start button)
+startQuizButton.addEventListener("click", () => {
+    start
+});
+
+// Next Button (User clicks next button)
+nextButton.addEventListener("click",
+   (displayNext = () => {
+    questionCount += 1;
+    if (questionCount == questionsArray.length) {
+        quizArea.classList.add("hide");
+    }
+    else {
+        quizArea
+    }
+   })
+)
+
+// Restart (User clicks restart button)
+restartButton.addEventListener("click", () => {
+    initial ();
+    displayContainer.classList.remove("hide")
+})
+
+// Quiz creation
+function quizCreator() {
+    questionsArray.sort (() => Math.random() - 0.5);
+    for (let i of questionsArray) {
+        i.options.sort (() => Math.random() - 0.5);
+        let div = document.createElement("div");
+        div.classList.add("container-mid", "hide");
+        countOfQestion.innerHTML = 1 + " of " + questionsArray.length + " Question";
+        let question_div = document.createElement("p");
+        question_div.classList.add("question");
+        question_div.innerHTML = i.question;
+        div.appendChild(question_div);
+        div.innerHTML += `
+        <button class="option-div" onclick="checker (this)">${i.options[0]}</button>
+        <button class="option-div" onclick="checker (this)">${i.options[2]}</button>
+        <button class="option-div" onclick="checker (this)">${i.options[3]}</button>
+        <button class="option-div" onclick="checker (this)">${i.options[4]}</button>
+        `;
+        quizArea.appendChild(div);
+    }
+}
