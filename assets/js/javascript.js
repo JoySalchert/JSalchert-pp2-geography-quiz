@@ -1,5 +1,5 @@
 //I took the artikle "Quiz App Using HTML, CSS And JavaScript (Source Code) – Coding Torque
-//"Written by: Piyush Patil (Code Credits: @virtualwiz) as a guide! I'm embarased that i could not finish on time!
+//"Written by: Piyush Patil (Code Credits: @virtualwiz) as a guide!
 
 let quizArea = document.getElementById("questions_area");
 let startQuizButton = document.getElementById("button_start_quiz");
