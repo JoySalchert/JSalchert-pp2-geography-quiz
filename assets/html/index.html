@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <!--head containing relevant metta data and css link-->
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <meta name="keywords" content="GeoQuiz, geography, quiz, earth, ocean, continents, world capitals, global">
-     <meta name="description" content="Geography Quiz: 10 Question, Multiple-Choice (4 Answers)">
-     <link rel="stylesheet" href="./../css/style.css">
-     <title>GeoQuiz | Test Your Knowlege</title>
-  </head>
+<!--head containing relevant metta data and css link-->
 
-  <!--body containing the div structure for the quiz game and js link at the bottom-->
-  <body>
-      <div id="start_page">
-         <button id="button_start_quiz" onclick="startQuiz">Start Quiz</button>
-         
-      </div>
-     <div id="header">
-         <h1>GeoQuiz</h1>
-     </div>
-     <hr>
-     <div id="questions_area">
-         <!--Left emplty filled with 4 js buttons containing the multiple choice questions-->
-     </div>
-     <hr>
-     <div id="buttons">
-        <button id="button_restart">Restart Quiz</button>
-        <button id="button_next">Next Question</button>
-     </div>
-     <!--css src-->
-     <script src="./../js/javascript.js"></script>
-  </body>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="keywords" content="GeoQuiz, geography, quiz, earth, ocean, continents, world capitals, global">
+   <meta name="description" content="Geography Quiz: 10 Question, Multiple-Choice (4 Answers)">
+   <link rel="stylesheet" href="./../css/style.css">
+   <script src="./../js/javascript.js"></script>
+   <title>GeoQuiz | Test Your Knowlege</title>
+</head>
+
+<!--body containing the div structure for the quiz game and js link at the bottom-->
+
+<body>
+   <div id="header">
+      <h1>GeoQuiz</h1>
+   </div>
+   <div id="start_page">
+      <button id="button_start_quiz" onclick="startQuiz()">Start Quiz</button>
+   </div>
+   <hr>
+   <div id="question_page">
+      <!--Left emplty filled with 4 js buttons containing the multiple choice questions-->
+   <div id="questions_area">
+
+   </div>
+      <button id="button_next">Next Question</button>
+   </div>
+   <div id="score_page">
+      <button id="button_restart">Restart Quiz</button>
+   </div>
+</body>
 
 </html>
