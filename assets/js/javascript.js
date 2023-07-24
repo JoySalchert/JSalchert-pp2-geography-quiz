@@ -123,5 +123,8 @@
 //     }
 // }
 
+
 // welcomming popup message (opens when visiting the site)
 alert("Wealcome to this quick Mental-Workout \n Good luck!")
+
+let quizArea = document.getElementById("questions_area");
