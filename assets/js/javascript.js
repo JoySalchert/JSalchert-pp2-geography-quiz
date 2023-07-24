@@ -122,3 +122,6 @@
 //         quizArea.appendChild(div);
 //     }
 // }
+
+// welcomming popup message (opens when visiting the site)
+alert("Wealcome to this quick Mental-Workout \n Good luck!")
