@@ -2,8 +2,19 @@
     display: none;
 }
 
+
+.correct + label {
+    border-style: solid;
+    border-color: rgb(28, 230, 28);
+}
+
+.incorrect + label {
+    border-style: solid;
+    border-color: red;
+}
+
 div {
-    color: hwb(0 100% 0%);
+    color: white;
     background-color: rgb(56, 104, 235);
     text-align: center;
 }
