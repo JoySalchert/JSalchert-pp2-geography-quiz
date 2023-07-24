@@ -24,14 +24,15 @@
       <button id="button_start_quiz" onclick="startQuiz()">Start Quiz</button>
    </div>
    <hr>
-   <div id="question_page">
+   <div id="question_page" class="hide">
       <!--Left emplty filled with 4 js buttons containing the multiple choice questions-->
    <div id="questions_area">
 
    </div>
-      <button id="button_next">Next Question</button>
+      <button id="button_next" onclick="displayNext()">Next Question</button>
    </div>
-   <div id="score_page">
+   <div id="score_page" class="hide">
+      <p id="result"></p>
       <button id="button_restart">Restart Quiz</button>
    </div>
 </body>
