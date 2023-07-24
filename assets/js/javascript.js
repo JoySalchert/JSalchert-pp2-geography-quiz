@@ -4,7 +4,9 @@
 let questionCount;
 let scoreCount;
 
+// Start Quiz!
 function startQuiz() {
+    questions_area.innerHTML = "";
     questionCount = 0;
     scoreCount = 0;
     quizCreator();
@@ -34,7 +36,7 @@ function displayNext() {
     }
 }
 
-//
+//correct or incorrect function
 function validateAnswer(userOption) {
     let userSolution = userOption.value;
     let question =
