@@ -1,6 +1,3 @@
-//I took the artikle "Quiz App Using HTML, CSS And JavaScript (Source Code) – Coding Torque"
-//Written by: Piyush Patil (Code Credits: @virtualwiz) as a guide!
-
 let questionCount;
 let scoreCount;
 
@@ -28,9 +25,6 @@ function displayNext() {
         document.getElementById("result").innerHTML =
             "Your score is " + scoreCount + " out of " + questionCount;
     } else {
-        //display questionCount
-  //      countOfQuestion.innerHTML =
- //         questionCount + 1 + " of " + questionsArray.length + " Question";
         //display quiz
         loadQuestion(questionCount);
     }
